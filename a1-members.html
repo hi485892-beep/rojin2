@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>에이원 (A1) 멤버 소개 - 스타비전 엔터테인먼트</title>
+<style>
+:root{
+  --color-background-primary:#ffffff;
+  --color-background-secondary:#f7f6f3;
+  --color-text-primary:#1f1e1d;
+  --color-text-secondary:#5f5e5a;
+  --color-text-tertiary:#73726c;
+  --color-border-tertiary:#ececea;
+  --color-border-secondary:#d8d6d1;
+  --border-radius-md:8px;
+  --border-radius-lg:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--color-background-primary);color:var(--color-text-primary)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:0.5px solid var(--color-border-tertiary)}
+.nav-logo{font-size:17px;font-weight:500;letter-spacing:-0.3px}
+.nav-logo span{color:#993556}
+.back-link a{font-size:13px;color:var(--color-text-secondary);text-decoration:none}
+.back-link a:hover{color:var(--color-text-primary)}
+
+.hero{padding:56px 32px 36px;text-align:center;border-bottom:0.5px solid var(--color-border-tertiary)}
+.hero-badge{display:inline-block;background:#fbeaf0;color:#993556;font-size:12px;font-weight:500;padding:4px 14px;border-radius:20px;margin-bottom:18px}
+.hero h1{font-size:32px;font-weight:500;letter-spacing:-0.6px;margin-bottom:10px}
+.hero p{font-size:14px;color:var(--color-text-secondary)}
+
+.members{padding:48px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;max-width:1200px;margin:0 auto}
+.member-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden;transition:transform 0.2s, border-color 0.2s}
+.member-card:hover{transform:translateY(-4px);border-color:var(--color-border-secondary)}
+.member-photo{width:100%;aspect-ratio:3/4;object-fit:contain;display:block;background:var(--color-background-secondary)}
+.member-info{padding:18px 18px 22px}
+.member-role-tag{display:inline-block;font-size:11px;font-weight:500;background:#fbeaf0;color:#993556;border-radius:12px;padding:3px 10px;margin-bottom:10px}
+.member-name{font-size:18px;font-weight:600;letter-spacing:-0.3px}
+.member-name-en{font-size:12px;color:var(--color-text-tertiary);margin-bottom:14px}
+.member-meta{font-size:12px;color:var(--color-text-secondary);line-height:1.9}
+.member-meta b{color:var(--color-text-primary);font-weight:500;width:54px;display:inline-block}
+
+.footer{padding:24px 32px;border-top:0.5px solid var(--color-border-tertiary);text-align:center}
+.footer p{font-size:12px;color:var(--color-text-tertiary)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo"><span>★</span> STARVISION</div>
+  <div class="back-link"><a href="index.html">← 홈으로</a></div>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">A-ONE MEMBERS</div>
+  <h1>에이원 (A1)</h1>
+  <p>데뷔 4년차 · 월드투어 진행 중인 5인조 보이그룹</p>
+</div>
+
+<div class="members">
+
+  <div class="member-card">
+    <img class="member-photo" src="img/member1.png" alt="강주혁">
+    <div class="member-info">
+      <span class="member-role-tag">리더 · 리드보컬</span>
+      <div class="member-name">강주혁</div>
+      <div class="member-name-en">Kang Juhyuk · 24</div>
+      <div class="member-meta">
+        <div><b>신체</b>183cm / 68kg</div>
+        <div><b>생일</b>9월 29일</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img class="member-photo" src="img/member2.png" alt="고원준">
+    <div class="member-info">
+      <span class="member-role-tag">메인래퍼 · 리드댄서</span>
+      <div class="member-name">고원준</div>
+      <div class="member-name-en">Go Wonjun · 23</div>
+      <div class="member-meta">
+        <div><b>신체</b>187cm / 72kg</div>
+        <div><b>생일</b>8월 9일</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img class="member-photo" src="img/member3.png" alt="윤하성">
+    <div class="member-info">
+      <span class="member-role-tag">메인보컬 · 서브댄서</span>
+      <div class="member-name">윤하성</div>
+      <div class="member-name-en">Yoon Haseong · 22</div>
+      <div class="member-meta">
+        <div><b>신체</b>182cm / 64kg</div>
+        <div><b>생일</b>10월 17일</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img class="member-photo" src="img/member4.png" alt="이시운">
+    <div class="member-info">
+      <span class="member-role-tag">센터 · 서브보컬</span>
+      <div class="member-name">이시운</div>
+      <div class="member-name-en">Lee Siwoon · 22</div>
+      <div class="member-meta">
+        <div><b>신체</b>183cm / 65kg</div>
+        <div><b>생일</b>11월 4일</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="member-card">
+    <img class="member-photo" src="img/member5.png" alt="서진호">
+    <div class="member-info">
+      <span class="member-role-tag">메인댄서 · 리드래퍼</span>
+      <div class="member-name">서진호</div>
+      <div class="member-name-en">Seo Jinho · 21</div>
+      <div class="member-meta">
+        <div><b>신체</b>178cm / 51kg</div>
+        <div><b>생일</b>12월 12일</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <p>© 2026 스타비전 엔터테인먼트. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

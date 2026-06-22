@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>스타비전 엔터테인먼트</title>
+<style>
+:root{
+  --color-background-primary:#ffffff;
+  --color-background-secondary:#f7f6f3;
+  --color-text-primary:#1f1e1d;
+  --color-text-secondary:#5f5e5a;
+  --color-text-tertiary:#73726c;
+  --color-border-tertiary:#ececea;
+  --color-border-secondary:#d8d6d1;
+  --border-radius-md:8px;
+  --border-radius-lg:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:0.5px solid var(--color-border-tertiary);background:var(--color-background-primary)}
+.nav-logo{font-size:17px;font-weight:500;color:var(--color-text-primary);letter-spacing:-0.3px}
+.nav-logo span{color:#993556}
+.nav-links{display:flex;gap:24px}
+.nav-links a{font-size:13px;color:var(--color-text-secondary);text-decoration:none}
+.nav-links a:hover{color:var(--color-text-primary)}
+.hero{padding:64px 32px 48px;text-align:center;background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-tertiary)}
+.hero-badge{display:inline-block;background:#fbeaf0;color:#993556;font-size:12px;font-weight:500;padding:4px 14px;border-radius:20px;margin-bottom:20px}
+.hero h1{font-size:36px;font-weight:500;color:var(--color-text-primary);line-height:1.2;margin-bottom:12px;letter-spacing:-0.8px}
+.hero h1 em{font-style:normal;color:#993556}
+.hero p{font-size:15px;color:var(--color-text-secondary);max-width:420px;margin:0 auto 28px;line-height:1.7}
+.hero-btns{display:flex;gap:10px;justify-content:center}
+.btn-primary{background:#993556;color:#fff;border:none;padding:10px 22px;border-radius:var(--border-radius-md);font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-secondary{background:transparent;color:var(--color-text-primary);border:0.5px solid var(--color-border-secondary);padding:10px 22px;border-radius:var(--border-radius-md);font-size:13px;cursor:pointer;text-decoration:none;display:inline-block}
+.section{padding:48px 32px}
+.section-label{font-size:12px;color:#993556;font-weight:500;letter-spacing:0.5px;margin-bottom:8px}
+.section h2{font-size:22px;font-weight:500;color:var(--color-text-primary);margin-bottom:24px;letter-spacing:-0.4px}
+.artists{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.artist-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden;transition:border-color 0.15s}
+.artist-card:hover{border-color:var(--color-border-secondary)}
+.artist-thumb{height:170px;display:flex;align-items:center;justify-content:center;font-size:48px;overflow:hidden}
+.a1-thumb{background:#000}
+.aura-thumb{background:#000}
+.artist-info{padding:14px 16px}
+.artist-name{font-size:15px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.artist-sub{font-size:12px;color:var(--color-text-secondary)}
+.artist-tag{display:inline-block;margin-top:8px;font-size:11px;padding:3px 10px;border-radius:12px}
+.tag-pink{background:#fbeaf0;color:#993556}
+.tag-purple{background:#eeedfe;color:#534ab7}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.news-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:16px}
+.news-date{font-size:11px;color:var(--color-text-tertiary);margin-bottom:6px}
+.news-title{font-size:13px;color:var(--color-text-primary);line-height:1.5}
+.news-tag{font-size:11px;color:#185fa5;margin-top:8px;display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:48px;padding:0 32px 48px}
+.stat-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:20px;text-align:center}
+.stat-num{font-size:28px;font-weight:500;color:var(--color-text-primary);line-height:1}
+.stat-num span{font-size:16px}
+.stat-label{font-size:12px;color:var(--color-text-secondary);margin-top:6px}
+.footer{padding:24px 32px;border-top:0.5px solid var(--color-border-tertiary);display:flex;justify-content:space-between;align-items:center}
+.footer p{font-size:12px;color:var(--color-text-tertiary)}
+.player{display:inline-flex;align-items:center;gap:12px;background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:24px;padding:8px 18px 8px 8px;margin:0 auto 28px}
+.player-btn{width:32px;height:32px;border-radius:50%;background:#993556;color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.player-info{text-align:left}
+.player-title{font-size:12px;font-weight:500;color:var(--color-text-primary)}
+.player-sub{font-size:11px;color:var(--color-text-tertiary)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo"><span>★</span> STARVISION</div>
+  <div class="nav-links">
+    <a href="#artists">아티스트</a>
+    <a href="#news">뉴스</a>
+    <a href="kpop_company_structure.html">회사소개</a>
+    <a href="#">채용</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">MM 미디어그룹 자회사</div>
+  <h1>음악으로 연결되는<br><em>새로운 세계</em></h1>
+  <p>스타비전 엔터테인먼트는 에이원과 아우라를 중심으로 글로벌 K-pop 시장을 이끌어갑니다.</p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="#artists">아티스트 보기 ↗</a>
+    <a class="btn-secondary" href="kpop_company_structure.html">회사 소개</a>
+  </div>
+
+  <div style="margin-top:24px">
+    <audio id="bgm" src="Mission_X.mp3" loop></audio>
+    <div class="player">
+      <button class="player-btn" id="playBtn" onclick="toggleMusic()">▶</button>
+      <div class="player-info">
+        <div class="player-title">Mission X</div>
+        <div class="player-sub">STARVISION</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const bgm = document.getElementById('bgm');
+  const playBtn = document.getElementById('playBtn');
+  function toggleMusic(){
+    if(bgm.paused){ bgm.play(); playBtn.textContent='⏸'; }
+    else { bgm.pause(); playBtn.textContent='▶'; }
+  }
+</script>
+
+<div class="section" id="artists">
+  <div class="section-label">OUR ARTISTS</div>
+  <h2>소속 아티스트</h2>
+  <div class="artists">
+    <a class="artist-card" href="a1-members.html" style="text-decoration:none;color:inherit;display:block">
+      <div class="artist-thumb a1-thumb"><img src="img/a1logo.png" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+      <div class="artist-info">
+        <div class="artist-name">에이원 (A1)</div>
+        <div class="artist-sub">데뷔 4년차 · 월드투어 중</div>
+        <span class="artist-tag tag-pink">정상급 활동</span>
+      </div>
+    </a>
+    <div class="artist-card">
+      <div class="artist-thumb aura-thumb"><img src="img/auralogo.png" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+      <div class="artist-info">
+        <div class="artist-name">아우라 (AURA)</div>
+        <div class="artist-sub">데뷔 준비 중 · 차세대 기대주</div>
+        <span class="artist-tag tag-purple">데뷔 예정</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="news" style="background:var(--color-background-secondary);border-top:0.5px solid var(--color-border-tertiary)">
+  <div class="section-label">NEWS</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px">
+    <h2 style="margin-bottom:0">최신 소식</h2>
+    <a class="btn-primary" href="newsroom.html" style="font-size:12px;padding:8px 16px;white-space:nowrap">뉴스룸 전체보기 →</a>
+  </div>
+  
+<div class="news-grid">
+<a href="aura-news.html" class="news-card" style="text-decoration:none;color:inherit">
+<div class="news-date">2026.06</div><div class="news-title">틱톡 100만 팔로워 은휘, 아우라 합류</div></a>
+<a href="aura-news.html#dohyeon" class="news-card" style="text-decoration:none;color:inherit">
+<div class="news-date">2026.06</div><div class="news-title">도현, 건강 회복 후 활동 본격화</div></a>
+<a href="aura-news.html#rojin" class="news-card" style="text-decoration:none;color:inherit">
+<div class="news-date">2026.06</div><div class="news-title">Mission X 작곡 참여 이로진 합류</div></a>
+<a href="aura-news.html#rian" class="news-card" style="text-decoration:none;color:inherit">
+<div class="news-date">2026.06</div><div class="news-title">댄스 신동 리안, 아우라 멤버 공개</div></a>
+</div>
+</div>
+</div>
+
+<div class="stats">
+  <div class="stat-card">
+    <div class="stat-num">4<span>년차</span></div>
+    <div class="stat-label">에이원 활동 연차</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">2<span>팀</span></div>
+    <div class="stat-label">소속 아티스트</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">글로벌</div>
+    <div class="stat-label">월드투어 진행 중</div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 스타비전 엔터테인먼트. All rights reserved.</p>
+  <p style="font-size:12px;color:var(--color-text-tertiary)">MM 미디어그룹 자회사</p>
+</footer>
+
+</body>
+</html>

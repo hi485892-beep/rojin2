@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스타비전 엔터테인먼트 조직도</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f4f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1f1e1d;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #73726c;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 24px;
+      width: 100%;
+      max-width: 720px;
+      overflow-x: auto;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #73726c;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #d6e4f6;
+      color: #3266ad;
+      font-size: 11px;
+      font-weight: 500;
+      border-radius: 20px;
+      padding: 3px 10px;
+      margin-top: 6px;
+    }
+
+    .back-link {
+      align-self: flex-start;
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    .back-link a {
+      font-size: 13px;
+      color: #73726c;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      color: #1f1e1d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="back-link"><a href="index.html">← 홈으로</a></div>
+
+  <h1>스타비전 엔터테인먼트 조직도</h1>
+  <p class="subtitle">에이원 데뷔 4년차 · 아우라 데뷔 준비 중</p>
+
+  <div class="card">
+    <svg viewBox="0 0 680 820" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>스타비전 엔터테인먼트 조직도</title>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+
+      <!-- PHASE 1 label -->
+      <rect x="30" y="30" width="620" height="28" rx="6" fill="none" stroke="rgba(31,30,29,0.15)" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text x="340" y="49" text-anchor="middle" fill="#3d3d3a" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">📍 PHASE 1 — 약 4년 전 · 중소기획사 시절</text>
+
+      <!-- 스타비전 엔터테인먼트 (원래) -->
+      <g>
+        <rect x="220" y="72" width="240" height="52" rx="8" fill="#faeced" stroke="#993c1d" stroke-width="0.5"/>
+        <text x="340" y="92" text-anchor="middle" dominant-baseline="central" fill="#712b13" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">스타비전 엔터테인먼트</text>
+        <text x="340" y="110" text-anchor="middle" dominant-baseline="central" fill="#993c1d" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">소규모 개인 기획사 (중소)</text>
+      </g>
+
+      <!-- 화살표: 스타비전 → 에이원, 아우라 -->
+      <line x1="300" y1="124" x2="220" y2="158" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="380" y1="124" x2="460" y2="158" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- 에이원 (초기) -->
+      <g>
+        <rect x="90" y="158" width="220" height="52" rx="8" fill="#fbeaf0" stroke="#993556" stroke-width="0.5"/>
+        <text x="200" y="178" text-anchor="middle" dominant-baseline="central" fill="#72243e" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">에이원 (A1) ✨</text>
+        <text x="200" y="196" text-anchor="middle" dominant-baseline="central" fill="#993556" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">데뷔 → 즉시 음원 올킬 대박</text>
+      </g>
+
+      <!-- 아우라 (연습생) -->
+      <g>
+        <rect x="380" y="158" width="210" height="52" rx="8" fill="#eeedfee" stroke="#534ab7" stroke-width="0.5"/>
+        <rect x="380" y="158" width="210" height="52" rx="8" fill="#eeedfe" stroke="#534ab7" stroke-width="0.5"/>
+        <text x="485" y="178" text-anchor="middle" dominant-baseline="central" fill="#3c3489" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">아우라 🌟</text>
+        <text x="485" y="196" text-anchor="middle" dominant-baseline="central" fill="#534ab7" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">연습생으로 트레이닝 중</text>
+      </g>
+
+      <!-- 에이원 대박 배지 -->
+      <path d="M200 210 Q148 240 165 265" fill="none" stroke="#5a4815" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+      <text x="108" y="248" text-anchor="middle" fill="#5a4815" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">데뷔 즉시!</text>
+      <rect x="55" y="268" width="290" height="28" rx="14" fill="#f6eedf"/>
+      <text x="200" y="287" text-anchor="middle" fill="#5a4815" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">🔥 데뷔 당일 음원 올킬 · 팬덤 폭발 · 해외 입소문</text>
+
+      <!-- 인수합병 구분선 -->
+      <rect x="30" y="318" width="620" height="28" rx="6" fill="none" stroke="#4682d5" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text x="340" y="337" text-anchor="middle" fill="#3266ad" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">⚡ 인수합병 — 에이원 대박 직후 · 아우라 연습생 재계약 시점</text>
+      <line x1="340" y1="346" x2="340" y2="376" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- PHASE 2 label -->
+      <rect x="30" y="378" width="620" height="28" rx="6" fill="none" stroke="rgba(31,30,29,0.15)" stroke-width="0.5" stroke-dasharray="4 3"/>
+      <text x="340" y="397" text-anchor="middle" fill="#3d3d3a" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">📍 PHASE 2 — 현재 · 대기업 엔터테인먼트</text>
+
+      <!-- MM 미디어그룹 -->
+      <g>
+        <rect x="190" y="420" width="300" height="52" rx="8" fill="#e6f1fb" stroke="#185fa5" stroke-width="0.5"/>
+        <text x="340" y="440" text-anchor="middle" dominant-baseline="central" fill="#0c447c" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">MM 미디어그룹 (모회사)</text>
+        <text x="340" y="458" text-anchor="middle" dominant-baseline="central" fill="#185fa5" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">코스피 상장 · 방송 · 음악 · 영상 사업</text>
+      </g>
+
+      <line x1="340" y1="472" x2="340" y2="508" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- 스타비전 (자회사) -->
+      <g>
+        <rect x="190" y="508" width="300" height="52" rx="8" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.5"/>
+        <text x="340" y="528" text-anchor="middle" dominant-baseline="central" fill="#085041" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">스타비전 엔터테인먼트 (자회사)</text>
+        <text x="340" y="546" text-anchor="middle" dominant-baseline="central" fill="#0f6e56" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">리브랜딩 · 시설·인력 대폭 확충</text>
+      </g>
+
+      <!-- 화살표: 자회사 → 산하 3개 -->
+      <line x1="270" y1="560" x2="190" y2="610" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="340" y1="560" x2="340" y2="610" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="410" y1="560" x2="490" y2="610" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- 에이원 (현재) -->
+      <g>
+        <rect x="60" y="610" width="240" height="66" rx="8" fill="#fbeaf0" stroke="#993556" stroke-width="0.5"/>
+        <text x="180" y="632" text-anchor="middle" dominant-baseline="central" fill="#72243e" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">에이원 (A1) ✨</text>
+        <text x="180" y="650" text-anchor="middle" dominant-baseline="central" fill="#993556" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">데뷔 4년차</text>
+        <text x="180" y="666" text-anchor="middle" dominant-baseline="central" fill="#993556" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">월드투어 · 정상급 활동 중</text>
+      </g>
+
+      <!-- 아우라 (현재) -->
+      <g>
+        <rect x="370" y="610" width="240" height="66" rx="8" fill="#eeedfe" stroke="#534ab7" stroke-width="0.5"/>
+        <text x="490" y="632" text-anchor="middle" dominant-baseline="central" fill="#3c3489" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">아우라 🌟</text>
+        <text x="490" y="650" text-anchor="middle" dominant-baseline="central" fill="#534ab7" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">데뷔 준비 중 (곧 데뷔)</text>
+        <text x="490" y="666" text-anchor="middle" dominant-baseline="central" fill="#534ab7" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">에이원 후배 · 차세대 기대주</text>
+      </g>
+
+      <!-- 매니지먼트 팀 -->
+      <g>
+        <rect x="250" y="610" width="180" height="66" rx="8" fill="#f1efe8" stroke="#5f5e5a" stroke-width="0.5"/>
+        <text x="340" y="632" text-anchor="middle" dominant-baseline="central" fill="#444441" font-size="14" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">매니지먼트 팀</text>
+        <text x="340" y="650" text-anchor="middle" dominant-baseline="central" fill="#5f5e5a" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">제작 · 홍보</text>
+        <text x="340" y="666" text-anchor="middle" dominant-baseline="central" fill="#5f5e5a" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">글로벌 사업</text>
+      </g>
+
+      <!-- 아우라 데뷔 D-day 배지 -->
+      <rect x="370" y="688" width="240" height="24" rx="12" fill="#d6e4f6"/>
+      <text x="490" y="704" text-anchor="middle" fill="#3266ad" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">🎯 데뷔 D-day 카운트다운 중</text>
+
+      <!-- 하단 안내 -->
+      <text x="340" y="760" text-anchor="middle" fill="#73726c" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">* PHASE 1 → 인수합병 → PHASE 2 순서로 읽어주세요</text>
+    </svg>
+  </div>
+
+  <p class="note">이 페이지를 북마크해두면 언제든지 다시 열 수 있어요 🔖</p>
+
+</body>
+</html>
