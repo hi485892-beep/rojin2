@@ -379,7 +379,7 @@ main{
 .share-icons button:hover{border-color:var(--brand-red);color:var(--brand-red);}
 
 .hero-figure{margin:0 0 22px;}
-.hero-figure img{width:100%;object-fit:cover;max-height:520px;}
+.hero-figure img{width:100%;object-fit:contain;max-height:520px;background:#0d0d10;}
 .hero-figure figcaption{
   font-size:12.5px;
   color:var(--ink-faint);
